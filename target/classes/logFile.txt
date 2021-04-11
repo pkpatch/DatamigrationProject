@@ -1,0 +1,58 @@
+[INFO ] 2021-04-11 15:54:25.895 [main] App - Application Started:: 
+[INFO ] 2021-04-11 15:54:25.899 [main] App - Timer initialised:: 
+[INFO ] 2021-04-11 15:54:25.902 [main] App - Non-Threaded:: 
+[INFO ] 2021-04-11 15:54:25.904 [main] App - Reading File:: resources/employees.csv
+[INFO ] 2021-04-11 15:54:25.905 [main] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 15:54:26.082 [main] App - 10000 records were read from the file  which took: 0.1499196 seconds. Approximately a rate of 66702 records per Second
+[INFO ] 2021-04-11 15:54:53.675 [main] App - 9943 records inserted into employees table which took: 26.61823 seconds. Approximately a rate of 373 records per Second
+[INFO ] 2021-04-11 15:54:53.958 [main] App - 57 records inserted into employees table which took: 0.1814659 seconds. Approximately a rate of 314 records per Second
+[INFO ] 2021-04-11 15:54:53.958 [main] App - Reading File:: resources/EmployeeRecordsLarge.csv
+[INFO ] 2021-04-11 15:54:53.959 [main] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 15:54:54.139 [main] App - 65499 records were read from the file  which took: 0.1812076 seconds. Approximately a rate of 361458 records per Second
+[INFO ] 2021-04-11 15:57:42.914 [main] App - 65499 records inserted into employees table which took: 168.689921 seconds. Approximately a rate of 388 records per Second
+[INFO ] 2021-04-11 15:57:42.919 [main] App - The entire process took: 197.0143999 seconds.
+[INFO ] 2021-04-11 15:58:15.359 [main] App - Application Started:: 
+[INFO ] 2021-04-11 15:58:15.359 [main] App - Timer initialised:: 
+[INFO ] 2021-04-11 15:58:15.359 [main] App - 1-Thread:: 
+[INFO ] 2021-04-11 15:58:15.375 [main] App - Reading File:: resources/EmployeeRecordsLarge.csv
+[INFO ] 2021-04-11 15:58:15.375 [Thread-0] App - Reading File:: resources/employees.csv
+[INFO ] 2021-04-11 15:58:15.375 [main] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 15:58:15.375 [Thread-0] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 15:58:15.613 [Thread-0] App - 10000 records were read from the file  which took: 0.2068168 seconds. Approximately a rate of 48351 records per Second
+[INFO ] 2021-04-11 15:58:15.884 [main] App - 65499 records were read from the file  which took: 0.507466 seconds. Approximately a rate of 129070 records per Second
+[INFO ] 2021-04-11 15:59:07.055 [Thread-0] App - 9943 records inserted into employees table which took: 50.3532383 seconds. Approximately a rate of 197 records per Second
+[INFO ] 2021-04-11 15:59:07.468 [Thread-0] App - 57 records inserted into employees table which took: 0.2806545 seconds. Approximately a rate of 203 records per Second
+[INFO ] 2021-04-11 16:01:49.750 [main] App - 65499 records inserted into employees table which took: 213.0472232 seconds. Approximately a rate of 307 records per Second
+[INFO ] 2021-04-11 16:01:49.754 [main] App - The entire process took: 214.3796499 seconds.
+[INFO ] 2021-04-11 16:02:17.937 [main] App - Application Started:: 
+[INFO ] 2021-04-11 16:02:17.940 [main] App - Timer initialised:: 
+[INFO ] 2021-04-11 16:02:17.944 [main] App - Multi-Threaded:: 
+[INFO ] 2021-04-11 16:02:17.948 [Thread-0] App - Reading File:: resources/employees.csv
+[INFO ] 2021-04-11 16:02:17.948 [Thread-1] App - Reading File:: resources/EmployeeRecordsLarge.csv
+[INFO ] 2021-04-11 16:02:17.949 [Thread-0] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 16:02:17.949 [Thread-1] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 16:02:18.176 [Thread-0] App - 10000 records were read from the file  which took: 0.1905727 seconds. Approximately a rate of 52473 records per Second
+[INFO ] 2021-04-11 16:02:18.524 [Thread-1] App - 65499 records were read from the file  which took: 0.5767315 seconds. Approximately a rate of 113569 records per Second
+[INFO ] 2021-04-11 16:03:09.808 [Thread-0] App - 9943 records inserted into employees table which took: 50.5124661 seconds. Approximately a rate of 196 records per Second
+[INFO ] 2021-04-11 16:03:10.270 [Thread-0] App - 57 records inserted into employees table which took: 0.3311652 seconds. Approximately a rate of 172 records per Second
+[INFO ] 2021-04-11 16:06:03.900 [Thread-1] App - 65499 records inserted into employees table which took: 224.6085727 seconds. Approximately a rate of 291 records per Second
+[INFO ] 2021-04-11 16:06:03.915 [main] App - The entire process took: 225.9695466 seconds.
+[INFO ] 2021-04-11 16:14:47.615 [main] App - Application Started:: 
+[INFO ] 2021-04-11 16:14:47.620 [main] App - Timer initialised:: 
+[INFO ] 2021-04-11 16:14:47.625 [main] App - Non-Threaded:: 
+[INFO ] 2021-04-11 16:14:47.627 [main] App - Reading File:: resources/employees.csv
+[INFO ] 2021-04-11 16:14:47.628 [main] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 16:14:47.804 [main] App - 10000 records were read from the file  which took: 0.1506621 seconds. Approximately a rate of 66373 records per Second
+[INFO ] 2021-04-11 16:15:16.883 [main] App - 9943 records inserted into employees table which took: 28.0185895 seconds. Approximately a rate of 354 records per Second
+[INFO ] 2021-04-11 16:15:17.179 [main] App - 57 records inserted into employees table which took: 0.1989256 seconds. Approximately a rate of 286 records per Second
+[INFO ] 2021-04-11 16:15:17.179 [main] App - Reading File:: resources/EmployeeRecordsLarge.csv
+[INFO ] 2021-04-11 16:15:17.180 [main] App - Begin Data Validation:: 
+[INFO ] 2021-04-11 16:15:17.414 [main] App - 65499 records were read from the file  which took: 0.2351132 seconds. Approximately a rate of 278584 records per Second
+[INFO ] 2021-04-11 16:18:40.764 [main] App - 65499 records inserted into employees table which took: 203.2818087 seconds. Approximately a rate of 322 records per Second
+[INFO ] 2021-04-11 16:18:40.769 [main] App - The entire process took: 233.1444296 seconds.
+[INFO ] 2021-04-11 16:45:27.411 [main] App - Application Started:: 
+[INFO ] 2021-04-11 16:45:27.415 [main] App - Timer initialised:: 
+[INFO ] 2021-04-11 16:45:27.418 [main] App - Non-Threaded:: 
+[INFO ] 2021-04-11 16:45:27.444 [main] App - Reading File:: resources/employees.csv
+[INFO ] 2021-04-11 16:45:27.445 [main] App - Begin Data Validation:: 
+[WARN ] 2021-04-11 16:58:00.430 [main] App - ID:: 1 Patrick Walsh invalid data has been entered for Date of Join or Date oof Birth
