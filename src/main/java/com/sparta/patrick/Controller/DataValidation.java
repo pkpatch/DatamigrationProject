@@ -3,6 +3,8 @@ package com.sparta.patrick.Controller;
 import java.sql.Date;
 import java.time.LocalDate;
 
+import static com.sparta.patrick.App.logger;
+
 public class DataValidation {
 
     public int checkEmpIdAndSalary(int empIdSalary) {
@@ -49,16 +51,17 @@ public class DataValidation {
 
     public Date checkDate(String employeeDatum) {
         try {
-            String[] empdate = employeeDatum.split("/");
-            int month = (Integer.parseInt(empdate[0]));
-            int day = (Integer.parseInt(empdate[1]));
-            int year = (Integer.parseInt(empdate[2]));
+            String[] employeeDate = employeeDatum.split("/");
+            int month = (Integer.parseInt(employeeDate[0]));
+            int day = (Integer.parseInt(employeeDate[1]));
+            int year = (Integer.parseInt(employeeDate[2]));
 
             LocalDate localDate = LocalDate.of(year, month, day);
             Date date = Date.valueOf(localDate);
             return date;
 
         } catch (Exception e) {
+            logger.error(e.getMessage());
         }
         return null;
     }

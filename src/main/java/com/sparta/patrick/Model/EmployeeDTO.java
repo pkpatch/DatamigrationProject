@@ -10,7 +10,7 @@ public class EmployeeDTO {
     private String firstName;
     private char middleInitial;
     private String lastName;
-    private char gender	;
+    private char gender;
     private String eMail;
     private Date dateOfBirth;
     private Date dateOfJoining;
@@ -121,6 +121,5 @@ public class EmployeeDTO {
     public void setSalary(int salary) {
         salary = salary;
     }
-
 
 }

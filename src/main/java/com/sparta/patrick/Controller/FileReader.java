@@ -1,7 +1,6 @@
 package com.sparta.patrick.Controller;
 
 import com.sparta.patrick.Model.EmployeeDTO;
-import com.sparta.patrick.utils.Printer;
 import com.sparta.patrick.utils.myTimer;
 
 import java.io.BufferedReader;
@@ -13,7 +12,7 @@ import java.util.Map;
 
 import static com.sparta.patrick.App.logger;
 
-public class FileReader implements Runnable{
+public class FileReader implements Runnable {
     String inputFile;
 
     @Override
@@ -36,7 +35,6 @@ public class FileReader implements Runnable{
 
         long start = System.nanoTime();
         logger.info("Reading File:: " + inputFile);
-        int i = 0;
 
         try (BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(inputFile))) {
             String line;
@@ -54,24 +52,25 @@ public class FileReader implements Runnable{
                 }
             }
         } catch (FileNotFoundException e) {
-            Printer.printMessage("Error: Please see log for further information");
-            logger.error("Error");
+            logger.error("Exception:: " + e.getMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Exception:: " + e.getMessage());
         } catch (ParseException e) {
-            e.printStackTrace();
+            logger.error("Exception:: " + e.getMessage());
         }
 
         long finish = System.nanoTime();
 
         int records = employees.size() + duplicateEmployees.size();
 
-        myTimer.time(records +  " records were read from the file ",start, finish, records);
+        myTimer.time(records + " records were read from the file ", start, finish, records);
 
-        String tableName = "employees"+records;
+        String tableName = inputFile.replace(".", "_");
+        tableName = tableName.replace("/", "_");
+        tableName.concat(String.valueOf(records));
 
         employeeManager.mapEmployeesToDB(employees, tableName);
-        if(duplicateEmployees.size() >0){
+        if (duplicateEmployees.size() > 0) {
             tableName = "duplicates" + tableName;
             employeeManager.mapEmployeesToDB(duplicateEmployees, tableName);
         }

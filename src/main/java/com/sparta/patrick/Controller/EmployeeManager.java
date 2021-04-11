@@ -18,7 +18,6 @@ public class EmployeeManager {
         employeeDAO.insertEmployee(employees, tableName);
         long finish = System.nanoTime();
 
-        myTimer.time( employees.size() + " records inserted into employees table", start, finish, employees.size());
-
+        myTimer.time(employees.size() + " records inserted into employees table", start, finish, employees.size());
     }
 }
